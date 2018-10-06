@@ -14,9 +14,9 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-          <style>{`html, body { height: 100%; }`}</style>
+          <style>{`html, body { height: 100% }`}</style>
         </Head>
-        <body className="custom_class">
+        <body>
           <Main />
           <NextScript />
         </body>
