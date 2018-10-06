@@ -1,21 +1,42 @@
 {
   "name": "godisnotreal",
+  "private": true,
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "main": "index.js",
+  "entry": {
+    "index": "./index.js"
+  },
+  "dependencies": {
+    "antd": "^3.0.0",
+    "moment": "^2.19.3"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "next": "^7.0.1",
+    "pre-commit": "1.x",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "redbox-react": "^1.2.6",
+    "webpack": "^4.20.2"
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.jsx src/",
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "export": "next export"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "next": "^7.0.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
   }
 }
